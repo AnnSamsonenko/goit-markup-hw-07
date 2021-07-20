@@ -23,7 +23,9 @@
 .button__icon {
   margin-left: 10px;
 }
-.hero__button {
+
+.hero__button,
+.form__button {
   @extend %button;
   margin: 0 auto;
 }
@@ -32,9 +34,4 @@
   @extend %button;
   display: flex;
   align-items: center;
-}
-
-.form__button {
-  @extend %button;
-  margin: 0 auto;
 }

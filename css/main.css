@@ -157,11 +157,11 @@ body {
 
 .footer__logo {
   margin-bottom: 20px;
-  margin-right: 0;
   color: var(--accent-color);
 }
 
-.hero__button, .footer__button, .form__button {
+.hero__button,
+.form__button, .footer__button {
   display: block;
   min-width: 200px;
   padding: 10px 32px;
@@ -179,7 +179,9 @@ body {
   transition: background-color 250ms var(--cubic-bezier);
 }
 
-.hero__button:hover, .footer__button:hover, .form__button:hover, .hero__button:focus, .footer__button:focus, .form__button:focus {
+.hero__button:hover,
+.form__button:hover, .footer__button:hover, .hero__button:focus,
+.form__button:focus, .footer__button:focus {
   background-color: var(--page-btn-hover);
 }
 
@@ -187,17 +189,14 @@ body {
   margin-left: 10px;
 }
 
-.hero__button {
+.hero__button,
+.form__button {
   margin: 0 auto;
 }
 
 .footer__button {
   display: flex;
   align-items: center;
-}
-
-.form__button {
-  margin: 0 auto;
 }
 
 .page-grid {
@@ -472,7 +471,7 @@ body {
   width: 358px;
   height: 50px;
   padding: 15px;
-  margin-right: 8px;
+  margin-right: 12px;
   background-color: transparent;
   border: 1px solid var(--footer-input-color);
   border-radius: 4px;
