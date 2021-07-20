@@ -19,8 +19,7 @@
 .socials__link--grey {
   @extend %socials__link;
   color: var(--icon-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier);
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -30,9 +29,9 @@
 
 .socials__link--white {
   @extend %socials__link;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic-bezier);
   color: var(--accent-color);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--social-links-bg-color);
   &:hover,
   &:focus {
     background-color: var(--brand-color);

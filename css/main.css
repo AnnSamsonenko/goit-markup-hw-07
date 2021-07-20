@@ -13,8 +13,18 @@
   --icon-color: #afb1b8;
   --footer-bg-color: #2f303a;
   --galery-border-color: #eeeeee;
+  --services-overlay-color: rgba(47, 48, 58, 0.8);
+  --portf-card-overlay-color: rgba(33, 150, 243, 0.9);
+  --social-links-bg-color: rgba(255, 255, 255, 0.1);
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+  --footer-input-color: rgba(255, 255, 255, 0.3);
+  --footer-placeholder-color: rgba(255, 255, 255, 0.6);
+  --form-border-color: rgba(33, 33, 33, 0.2);
+  --form-placeholder-color: rgba(117, 117, 117, 0.5);
+  --backdrop-color: rgba(0, 0, 0, 0.2);
   --common-spacing: 0.03em;
   --card-gap: 30px;
+  --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .visually-hidden {
@@ -109,7 +119,7 @@ body {
 
 .socials__link--grey {
   color: var(--icon-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier);
 }
 
 .socials__link--grey:hover, .socials__link--grey:focus {
@@ -118,9 +128,9 @@ body {
 }
 
 .socials__link--white {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic-bezier);
   color: var(--accent-color);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--social-links-bg-color);
 }
 
 .socials__link--white:hover, .socials__link--white:focus {
@@ -166,7 +176,7 @@ body {
   color: var(--accent-color);
   background-color: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic-bezier);
 }
 
 .hero__button:hover, .footer__button:hover, .form__button:hover, .hero__button:focus, .footer__button:focus, .form__button:focus {
@@ -235,7 +245,7 @@ body {
   display: block;
   padding-top: 31px;
   padding-bottom: 32px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--cubic-bezier);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -352,7 +362,7 @@ body {
   align-items: center;
   justify-content: center;
   color: var(--accent-color);
-  background-color: rgba(47, 48, 58, 0.8);
+  background-color: var(--services-overlay-color);
 }
 
 .team {
@@ -405,7 +415,7 @@ body {
   align-items: center;
   width: 170px;
   height: 92px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--cubic-bezier), border 250ms var(--cubic-bezier);
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   color: var(--icon-color);
@@ -429,7 +439,7 @@ body {
 
 .footer__link {
   display: inline-block;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--cubic-bezier);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -438,7 +448,7 @@ body {
 }
 
 .footer__link--grey {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-link-color);
 }
 
 .footer__link:hover, .footer__link:focus {
@@ -464,7 +474,7 @@ body {
   padding: 15px;
   margin-right: 8px;
   background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--footer-input-color);
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
@@ -475,7 +485,7 @@ body {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: var(--common-spacing);
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-placeholder-color);
 }
 
 .backdrop {
@@ -484,8 +494,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--backdrop-color);
+  transition: opacity 250ms var(--cubic-bezier), visibility 250ms var(--cubic-bezier);
 }
 
 .is-hidden {
@@ -503,7 +513,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms var(--cubic-bezier), visibility 250ms var(--cubic-bezier);
   background-color: var(--accent-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -532,7 +542,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--accent-color);
   fill: currentColor;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--cubic-bezier);
 }
 
 .modal__close:hover, .modal__close:focus {
@@ -559,7 +569,7 @@ body {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
-  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 500ms var(--cubic-bezier);
 }
 
 .form__input {
@@ -573,9 +583,9 @@ body {
   line-height: 1.25;
   letter-spacing: var(--common-spacing);
   color: var(--footer-bg-color);
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--form-border-color);
   border-radius: 4px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms var(--cubic-bezier);
 }
 
 .form__input:focus + .form__icon {
@@ -601,7 +611,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  color: var(--form-placeholder-color);
 }
 
 .form__checkbox {
@@ -639,7 +649,7 @@ body {
   cursor: pointer;
   border: 2px solid var(--text-color);
   border-radius: 2px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier), border-color 250ms var(--cubic-bezier);
 }
 
 .checkbox-hidden:checked + .form__checkbox::before {
@@ -672,7 +682,7 @@ body {
   border: none;
   min-width: 73px;
   padding: 6px 22px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier), box-shadow 250ms var(--cubic-bezier);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -683,13 +693,7 @@ body {
   background-color: var(--card-bg-color);
 }
 
-.filter__button:hover, .filter__button:focus {
-  color: var(--accent-color);
-  background-color: var(--brand-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.filter__button--active {
+.filter__button:hover, .filter__button:focus, .filter__button--active {
   color: var(--accent-color);
   background-color: var(--brand-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -706,7 +710,7 @@ body {
 
 .galery__link {
   display: block;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms var(--cubic-bezier);
 }
 
 .galery__link:hover, .galery__link:focus {
@@ -728,13 +732,13 @@ body {
   padding-right: 24px;
   padding-top: 63px;
   padding-bottom: 63px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms var(--cubic-bezier);
   font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: var(--common-spacing);
   color: var(--accent-color);
-  background-color: rgba(33, 150, 243, 0.9);
+  background-color: var(--portf-card-overlay-color);
 }
 
 .galery__link:hover .galery__desc,
