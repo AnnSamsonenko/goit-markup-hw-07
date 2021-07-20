@@ -1,0 +1,24 @@
+%logo {
+  display: inline-block;
+  font-family: var(--secondary-family);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: var(--common-spacing);
+  color: var(--logo-color);
+}
+.logo--blue {
+  @extend %logo;
+  color: var(--brand-color);
+}
+.head__logo {
+  @extend %logo;
+  margin-right: 93px;
+}
+
+.footer__logo {
+  @extend %logo;
+  margin-bottom: 20px;
+  margin-right: 0;
+  color: var(--accent-color);
+}

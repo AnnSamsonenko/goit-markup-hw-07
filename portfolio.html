@@ -16,14 +16,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!------------------Шапка сайта-------------------->
     <header class="head">
       <div class="container head__line">
         <nav class="head__nav">
-          <a class="logo link head__logo" href="./index.html" lang="en"
+          <a class="link head__logo" href="./index.html" lang="en"
             ><span class="logo--blue">Web</span>Studio
           </a>
           <ul class="head__list list">
@@ -32,7 +32,7 @@
             </li>
 
             <li class="head__item">
-              <a class="head__link head__link--current link" href="./portfolio.html">Портфолио</a>
+              <a class="head__link--current link" href="./portfolio.html">Портфолио</a>
             </li>
 
             <li class="head__item"><a class="head__link link" href="#feedback">Контакты</a></li>
@@ -40,8 +40,8 @@
         </nav>
         <ul class="head__feedback list">
           <li class="head__item">
-            <a class="head__link head__link--grey link" href="mailto:info@devstudio.com">
-              <svg class="head__icon" width="16" height="12">
+            <a class="head__link--grey link" href="mailto:info@devstudio.com">
+              <svg class="head__icon page-icon" width="16" height="12">
                 <use href="./image/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
@@ -49,8 +49,8 @@
           </li>
 
           <li class="head__item">
-            <a class="head__link head__link--grey link" href="tel:+380961111111">
-              <svg class="head__icon" width="10" height="16">
+            <a class="head__link--grey link" href="tel:+380961111111">
+              <svg class="head__icon page-icon" width="10" height="16">
                 <use href="./image/sprite.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -286,7 +286,7 @@
     <footer class="footer" id="feedback">
       <div class="container footer__thumbs">
         <div>
-          <a class="logo footer__logo link" href="./index.html" lang="en"
+          <a class="footer__logo link" href="./index.html" lang="en"
             ><span class="logo--blue">Web</span>Studio</a
           >
           <address>
@@ -314,8 +314,8 @@
             </ul>
           </address>
         </div>
-        <div role="group" aria-labelby="social-links">
-          <p class="thumb-title footer__title" id="social-links">Присоединяйтесь</p>
+        <div role="group">
+          <p class="thumb-title footer__title">Присоединяйтесь</p>
           <ul class="socials list">
             <li class="socials__item">
               <a href="" class="socials__link socials__link--white">
@@ -347,8 +347,8 @@
             </li>
           </ul>
         </div>
-        <div role="group" aria-labelby="subscribe-news-form">
-          <p class="thumb-title footer__title" id="subscribe-news-form">Подпишитесь на рассылку</p>
+        <div role="group">
+          <p class="thumb-title footer__title">Подпишитесь на рассылку</p>
           <form class="footer__signupform" name="signup-form" autocomplete="on">
             <label>
               <input
@@ -361,7 +361,7 @@
             </label>
             <button class="page-button footer__button" type="submit">
               Подписаться
-              <svg class="footer__icon" width="24" height="24">
+              <svg class="page-button__icon" width="24" height="24">
                 <use href="./image/sprite.svg#icon-send"></use>
               </svg>
             </button>

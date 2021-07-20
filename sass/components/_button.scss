@@ -1,0 +1,40 @@
+%button {
+  display: block;
+  min-width: 200px;
+  padding: 10px 32px;
+  border: none;
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+  cursor: pointer;
+  color: var(--accent-color);
+  background-color: var(--brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--page-btn-hover);
+  }
+}
+.button__icon {
+  margin-left: 10px;
+}
+.hero__button {
+  @extend %button;
+  margin: 0 auto;
+}
+
+.footer__button {
+  @extend %button;
+  display: flex;
+  align-items: center;
+}
+
+.form__button {
+  @extend %button;
+  margin: 0 auto;
+}
