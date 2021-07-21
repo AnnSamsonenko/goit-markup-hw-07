@@ -14,9 +14,7 @@
   display: inline-block;
   transition: color 250ms var(--cubic-bezier);
 
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
+  @include font($lh: 24px);
   letter-spacing: var(--common-spacing);
   color: var(--accent-color);
   &--grey {

@@ -2,9 +2,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 30px;
-  font-weight: 14;
-  font-size: 14px;
-  line-height: 1.71;
+  @include font($lh: 24px);
   letter-spacing: 0.03em;
   color: var(--shadow-color);
 }

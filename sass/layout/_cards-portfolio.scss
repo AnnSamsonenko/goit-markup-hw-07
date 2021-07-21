@@ -35,9 +35,7 @@
   padding-bottom: 63px;
   transition: transform 250ms var(--cubic-bezier);
 
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.6;
+  @include font($fs: 18px, $lh: 28px);
   letter-spacing: var(--common-spacing);
   color: var(--accent-color);
   background-color: var(--portf-card-overlay-color);
@@ -54,16 +52,12 @@
 .galery__title {
   margin-bottom: 4px;
 
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
+  @include font(18px, 700, 36px);
   letter-spacing: 0.06em;
 }
 
 .galery__subtitle {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.88;
+  @include font($fs: 16px, $lh: 30px);
   letter-spacing: var(--common-spacing);
   color: var(--shadow-color);
 }

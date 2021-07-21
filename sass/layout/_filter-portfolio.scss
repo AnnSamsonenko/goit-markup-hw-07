@@ -17,9 +17,7 @@
   transition: color 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier),
     box-shadow 250ms var(--cubic-bezier);
 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
+  @include font(16px, 500, 26px);
   text-align: center;
   letter-spacing: var(--common-spacing);
   cursor: pointer;

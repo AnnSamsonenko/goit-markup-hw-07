@@ -92,8 +92,8 @@ body {
 
 .subtitle {
   margin-bottom: 50px;
-  font-weight: 700;
   font-size: 36px;
+  font-weight: 700;
   line-height: 1.17;
   text-align: center;
   letter-spacing: var(--common-spacing);
@@ -107,7 +107,7 @@ body {
   margin-right: 10px;
 }
 
-.socials__link--grey, .socials__link--white {
+.socials__link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -137,7 +137,7 @@ body {
   background-color: var(--brand-color);
 }
 
-.logo--blue, .head__logo, .footer__logo {
+.logo {
   display: inline-block;
   font-family: var(--secondary-family);
   font-size: 26px;
@@ -153,6 +153,8 @@ body {
 
 .head__logo {
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .footer__logo {
@@ -160,15 +162,14 @@ body {
   color: var(--accent-color);
 }
 
-.hero__button,
-.form__button, .footer__button {
+.button {
   display: block;
   min-width: 200px;
   padding: 10px 32px;
   border: none;
   border-radius: 4px;
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
   text-align: center;
@@ -179,9 +180,7 @@ body {
   transition: background-color 250ms var(--cubic-bezier);
 }
 
-.hero__button:hover,
-.form__button:hover, .footer__button:hover, .hero__button:focus,
-.form__button:focus, .footer__button:focus {
+.button:hover, .button:focus {
   background-color: var(--page-btn-hover);
 }
 
@@ -207,8 +206,8 @@ body {
 }
 
 .thumb-title {
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   letter-spacing: var(--common-spacing);
   text-transform: uppercase;
@@ -222,13 +221,12 @@ body {
   border-bottom: 1px solid var(--head-border-color);
 }
 
-.head__line, .head__nav, .head__list {
+.head__line, .head__nav, .head__list, .head__feedback {
   display: flex;
   align-items: center;
 }
 
 .head__feedback {
-  display: flex;
   margin-left: auto;
 }
 
@@ -245,8 +243,8 @@ body {
   padding-top: 31px;
   padding-bottom: 32px;
   transition: color 250ms var(--cubic-bezier);
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: inherit;
@@ -300,8 +298,8 @@ body {
 
 .hero__title {
   margin-bottom: 30px;
-  font-weight: 900;
   font-size: 44px;
+  font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -334,8 +332,8 @@ body {
 }
 
 .features__desc {
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: var(--common-spacing);
   color: var(--shadow-color);
@@ -387,17 +385,17 @@ body {
 
 .team__member {
   margin-bottom: 10px;
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.19;
   letter-spacing: var(--common-spacing);
 }
 
 .team__prof {
   margin-bottom: 16px;
+  font-size: 14px;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.14;
   letter-spacing: var(--common-spacing);
   color: var(--shadow-color);
 }
@@ -439,9 +437,9 @@ body {
 .footer__link {
   display: inline-block;
   transition: color 250ms var(--cubic-bezier);
-  font-weight: 400;
   font-size: 14px;
-  line-height: 1.7;
+  font-weight: 400;
+  line-height: 1.71;
   letter-spacing: var(--common-spacing);
   color: var(--accent-color);
 }
@@ -520,8 +518,8 @@ body {
 
 .modal__title {
   margin-bottom: 30px;
-  font-weight: 700;
   font-size: 20px;
+  font-weight: 700;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
@@ -558,6 +556,7 @@ body {
   top: -18px;
   left: 0;
   font-size: 12px;
+  font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--shadow-color);
@@ -577,8 +576,8 @@ body {
   height: 40px;
   padding: 11px 42px;
   margin-bottom: 28px;
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.25;
   letter-spacing: var(--common-spacing);
   color: var(--footer-bg-color);
@@ -606,8 +605,8 @@ body {
 }
 
 .form__comment::placeholder {
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: var(--form-placeholder-color);
@@ -617,8 +616,8 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
-  font-weight: 14;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--shadow-color);
@@ -682,8 +681,8 @@ body {
   min-width: 73px;
   padding: 6px 22px;
   transition: color 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier), box-shadow 250ms var(--cubic-bezier);
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.63;
   text-align: center;
   letter-spacing: var(--common-spacing);
@@ -732,9 +731,9 @@ body {
   padding-top: 63px;
   padding-bottom: 63px;
   transition: transform 250ms var(--cubic-bezier);
-  font-weight: 400;
   font-size: 18px;
-  line-height: 1.6;
+  font-weight: 400;
+  line-height: 1.56;
   letter-spacing: var(--common-spacing);
   color: var(--accent-color);
   background-color: var(--portf-card-overlay-color);
@@ -751,15 +750,15 @@ body {
 
 .galery__title {
   margin-bottom: 4px;
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
 .galery__subtitle {
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.88;
   letter-spacing: var(--common-spacing);
   color: var(--shadow-color);

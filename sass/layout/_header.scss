@@ -3,13 +3,13 @@
 
   &__line,
   &__nav,
-  &__list {
+  &__list,
+  &__feedback {
     display: flex;
     align-items: center;
   }
 
   &__feedback {
-    display: flex;
     margin-left: auto;
   }
 }
@@ -28,9 +28,7 @@
   padding-bottom: 32px;
   transition: color 250ms var(--cubic-bezier);
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font($fw: 500);
   letter-spacing: 0.02em;
   color: inherit;
 
